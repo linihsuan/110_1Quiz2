@@ -13,7 +13,7 @@
             <asp:TextBox ID="tb_CTEL" runat="server"></asp:TextBox>
 
             <asp:RegularExpressionValidator ID="rev_CTEL" runat="server" ErrorMessage="不符合格式" 
-                ControlToValidate="tb_CTEL" ValidationExpression="(19|20)[0-9]{2}[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])">
+                ControlToValidate="tb_CTEL" ValidationExpression="^\d{4}[- /]\d{2}[- /]\d{2}$">
             </asp:RegularExpressionValidator>
             <br />
 
